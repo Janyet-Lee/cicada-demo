@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>cicada principle</title>
+        <style type="text/css">
+        	html,body{
+        		width: 100%;
+        		height: 100%;
+        	}
+        	#main{
+        		position: absolute;
+        		overflow: hidden;
+        		width: 700px;height: 600px;
+        		top: 0;left: 0;bottom: 0;right: 0;
+        		margin: auto;
+        	}
+        	.itemContainer{
+        		width: 150px;
+        		height: 150px;
+				display: inline-block;
+				margin:15px;
+				border: 4px solid green;
+				transition: .35s all;
+				-webkit-transition:.35s all;
+				overflow: hidden;
+        	}
+        	.item{
+        		display: inline-block;
+        		width: 100%;
+        		height: 100%;
+        	}
+        	.itemContainer:nth-child(2n+1){
+				border-radius: 87% 92% 95% 91%
+        	}
+        	.itemContainer:nth-child(2n+1):hover{
+				border-radius: 72% 80% 93% 86%
+        	}
+        	.itemContainer:nth-child(3n+2){
+				border-radius: 80% 88% 92% 83%
+        	}
+        	.itemContainer:nth-child(3n+2):hover{
+				border-radius: 75% 85% 68% 97%
+        	}
+        	.itemContainer:nth-child(4n+3){
+				border-radius: 84% 91% 87% 96%
+        	}
+        	.itemContainer:nth-child(4n+3):hover{
+				border-radius: 88% 83% 93% 91%
+        	}
+        	.itemContainer:nth-child(5n+4){
+				border-radius: 87% 94% 81% 99%
+        	}
+        	.itemContainer:nth-child(5n+4):hover{
+				border-radius: 82% 88% 97% 91%
+        	}
+        	.itemContainer:nth-child(6n+5){
+				border-radius: 83% 89% 92% 96%
+        	}
+        	.itemContainer:nth-child(6n+5):hover{
+				border-radius: 88% 82% 98% 90%
+        	}
+        	.itemContainer:nth-child(7n+6){
+				border-radius: 88% 85% 93% 98%
+        	}
+        	.itemContainer:nth-child(7n+6):hover{
+				border-radius: 83% 89% 88% 91%
+        	}
+        </style>
+    </head>
+    <body>
+    	<div id="main">
+    		<div class="itemContainer"><img src="img/1.jpg" alt="" class="item"></div>
+    		<div class="itemContainer"><img src="img/2.jpg" alt="" class="item"></div>
+    		<div class="itemContainer"><img src="img/3.jpg" alt="" class="item"></div>
+    		<div class="itemContainer"><img src="img/4.jpg" alt="" class="item"></div>
+    		<div class="itemContainer"><img src="img/5.jpg" alt="" class="item"></div>
+    		<div class="itemContainer"><img src="img/6.jpg" alt="" class="item"></div>
+    		<div class="itemContainer"><img src="img/7.jpg" alt="" class="item"></div>
+    		<div class="itemContainer"><img src="img/8.jpg" alt="" class="item"></div>
+    		<div class="itemContainer"><img src="img/9.jpg" alt="" class="item"></div>
+    	</div>
+    </body>
+</html>
